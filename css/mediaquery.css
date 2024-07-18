@@ -1,0 +1,221 @@
+@media (max-width: 700px) {
+  .container {
+    margin: 0 1rem;
+  }
+
+  .get-card {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .get-card > div {
+    font-size: medium !important;
+  }
+
+  .first-section {
+    flex-direction: column;
+  }
+  .first-section > .first-section-text-here {
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    border-bottom-left-radius: 0px !important;
+  }
+
+  .first-section-img {
+    width: auto;
+    border-radius: 0;
+    border-top-right-radius: 0px !important;
+  }
+  .first-section-img2 {
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+  }
+
+  /* Second Section Start */
+
+  .kyc-container {
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    margin-top: 3rem;
+  }
+
+  .fixed-images {
+    flex-direction: column-reverse;
+  }
+
+  .res-img {
+    margin: auto;
+    width: auto;
+  }
+
+  .kyc-heading {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 500;
+    margin-top: -2rem;
+  }
+  .total-invest {
+    margin: 3rem auto;
+    padding-top: 2rem;
+    /* padding-left: 5rem; */
+  }
+
+  .video-kyc {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .btn-result {
+    margin: 2rem 0 2rem 10rem;
+    padding: 15px 40px;
+  }
+
+  /* Third Section Start */
+
+  .para-head {
+    margin: 0 1rem 3rem 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  .main-cart {
+    flex-direction: column;
+  }
+  .cart-here {
+    width: 100%;
+  }
+
+  /* Fourth Section Start */
+
+  .coupon {
+    height: 300px;
+    flex-direction: column;
+  }
+
+  .cards-flex-here {
+    flex-direction: column;
+  }
+  .icon-here {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+  .small-property h2 {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .small-property p {
+    text-align: center;
+    font-size: large;
+  }
+
+  .btn-card-result {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    padding: 15px 40px;
+  }
+
+  /* Master Credit Card */
+  .master-credit-card {
+    flex-direction: column-reverse;
+  }
+  .image-master {
+    width: auto;
+    height: auto;
+  }
+  .master-text {
+    text-align: center;
+    margin-top: -2rem;
+    margin-right: 1rem;
+  }
+  .master-text p {
+    font-size: 19px;
+  }
+  .master-box {
+    flex-direction: column;
+  }
+
+  .round-bank2 {
+    margin: auto;
+    padding: 27px 28px;
+  }
+
+  .flow-right-res h2 {
+    margin-top: 2rem;
+  }
+  .why {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .unlearn {
+    font-weight: normal;
+  }
+  .md-stepper-horizontal .md-step {
+    padding: 10px;
+  }
+
+  .main-unlearn-image {
+    display: flex;
+    flex-wrap: nowrap;
+    transform: none;
+  }
+
+  .unlearn-image {
+    flex: 1;
+    min-width: 0;
+    margin: 10px;
+  }
+
+  .main-unlearn-image {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .unlearn-image {
+    min-width: 80%;
+    flex: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0 1rem;
+  }
+  .get-card > div {
+    font-size: medium !important;
+  }
+  .para-head {
+    font-size: medium;
+  }
+  .main-cart {
+    margin-top: 1rem;
+  }
+  .cart-here {
+    height: 225px;
+  }
+}
+
+@media (max-width: 1032px) {
+  .container {
+    margin: 0 2rem;
+  }
+  .kyc-container {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 1032px) {
+  .md-stepper-horizontal .md-step {
+    padding: 0px;
+    margin-right: 0px;
+  }
+  .md-stepper-horizontal {
+    margin-left: -1rem;
+  }
+  .total-invest {
+    margin: 0rem;
+  }
+  .btn-result {
+    margin: 1rem auto;
+  }
+}

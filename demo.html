@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Carousel/Flexbox</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .main-unlearn-image {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .unlearn-image {
+      min-width: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+      text-align: center;
+      background: #f0f0f0;
+      border: 1px solid #ccc;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .main-unlearn-image {
+        display: flex;
+        flex-wrap: nowrap;
+        transform: none;
+      }
+
+      .unlearn-image {
+        flex: 1;
+        min-width: 0;
+        margin: 10px;
+      }
+    }
+  </style>
+  <body>
+    <section class="container container-unlearn">
+      <h1 class="unlearn">Unlearn</h1>
+      <p class="unlearn-text">
+        There are many variations of passages of Lorem Ipsum available but the
+        majority have suffered alteration in some form.
+      </p>
+      <div class="main-unlearn-image">
+        <div class="unlearn-image">
+          <img src="img/blog1.webp" height="100%" width="100%" alt="blog" />
+          <div class="date-unlearn">DEC 22,2023</div>
+          <div>
+            <h3 class="size-handle">
+              Building a savings habit simplified with 5 easy steps
+            </h3>
+            <p class="para-unlearn">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+        <div class="unlearn-image">
+          <img src="img/blog2.webp" height="100%" width="100%" alt="blog" />
+          <div class="date-unlearn">DEC 22,2023</div>
+          <div>
+            <h3 class="size-handle">
+              Building a savings habit simplified with 5 easy steps
+            </h3>
+            <p class="para-unlearn">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+        <div class="unlearn-image">
+          <img src="img/blog3.webp" height="100%" width="100%" alt="blog" />
+          <div class="date-unlearn">DEC 22,2023</div>
+          <div>
+            <h3 class="size-handle">
+              Building a savings habit simplified with 5 easy steps
+            </h3>
+            <p class="para-unlearn">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-result-last">Show Result</button>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.querySelector(".main-unlearn-image");
+        const items = document.querySelectorAll(".unlearn-image");
+        let currentIndex = 0;
+        let intervalId = null;
+
+        function showNextItem() {
+          currentIndex = (currentIndex + 1) % items.length;
+          carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function startCarousel() {
+          if (window.innerWidth < 768) {
+            intervalId = setInterval(showNextItem, 3000);
+          }
+        }
+
+        function stopCarousel() {
+          if (intervalId) {
+            clearInterval(intervalId);
+            intervalId = null;
+            carousel.style.transform = `translateX(0)`;
+          }
+        }
+
+        function checkScreenSize() {
+          if (window.innerWidth < 768) {
+            if (!intervalId) startCarousel();
+          } else {
+            stopCarousel();
+          }
+        }
+
+        window.addEventListener("resize", checkScreenSize);
+
+        // Initial check
+        checkScreenSize();
+      });
+
+      //
+      //
+      //
+    </script>
+  </body>
+</html>
